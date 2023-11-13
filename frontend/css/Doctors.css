@@ -1,0 +1,110 @@
+/* doctors.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, button, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    color: #333;
+    margin: 0;
+    position: relative;
+    line-height: 1.5em;
+    font-size: 15px;
+    background: repeating-linear-gradient(
+        45deg,
+        #aaa,
+        #aaa 2px,
+        #ccc 2px,
+        #ccc 6px
+    );
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: #bdbdbd;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+.content {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #000000;
+}
+
+.doctor-list {
+    list-style-type: none;
+}
+
+li {
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doctor-info {
+    flex: 1;
+}
+
+.doctor-info h3 {
+    font-size: 1.5em;
+}
+
+.doctor-actions {
+    display: flex;
+    align-items: center;
+}
+
+.connect-button,
+.map-button {
+    background-color: #4facff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.connect-button:hover,
+.map-button:hover {
+    background-color: #2c7bbf;
+}
+
+/* Fixed-position button for "Emergency Support" */
+.emergency-support-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.emergency-support-button button {
+    background-color: #9c9c9c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.emergency-support-button button:hover {
+    background-color: #2c7bbf;
+}
